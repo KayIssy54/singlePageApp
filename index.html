@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <header>
+      <h1> Wordly</h1>
+      <button id="toggleTheme" aria-label="Toggle dark mode"></button>
+    </header>
+
+    <form id="searchForm" class="search-box">
+
+      <input 
+        type="text" 
+        id="wordInput" 
+        placeholder="Search for a word..." 
+        aria-label="Enter a word to search"
+        required
+      >
+
+      <button type="submit" aria-label="Search word">
+        Search
+      </button>
+
+    </form>
+
+    <div id="result" class="card" aria-live="polite"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
