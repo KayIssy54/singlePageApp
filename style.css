@@ -1,0 +1,82 @@
+/* ===== GLOBAL APP STYLE ===== */
+body {
+  background: #f5f7fb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Center app layout */
+.app {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== NAVBAR CUSTOM SHADOW ===== */
+.navbar {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== SEARCH BAR ANIMATION ===== */
+form input {
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(13,110,253,0.3);
+}
+
+/* ===== BUTTON ANIMATION ===== */
+form button {
+  transition: all 0.2s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+}
+
+/* ===== RESULT CARD ANIMATION ===== */
+#result {
+  min-height: 120px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* Re-trigger animation class (used in JS optionally) */
+.show-result {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== FADE IN ANIMATION ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== FOOTER STYLE ===== */
+footer {
+  margin-top: 60px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Footer text animation */
+footer h5 {
+  animation: fadeIn 0.6s ease;
+}
+
+footer p, footer small {
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

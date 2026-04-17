@@ -18,6 +18,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav ms-auto" >
         <li class="nav-item">
@@ -36,19 +37,17 @@
 
     <nav class="navbar bg-body-tertiary mb-3">
   <div class="container-fluid">
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Enter word" aria-label="Search"/>
+    <form class="d-flex position-relative" role="search">
+      <input class="form-control me-2" type="search" id="wordInput" placeholder="Enter word" aria-label="Search"/>
+      <div id="suggestions" class="list-group position-absolute w-100"></div>
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
   </div>
 </nav>
 
   
-  
     <div id="result" class="card p-3 shadow-sm mt-3" aria-live="polite"></div>
 
-  </div>
-</div>
 
    <section id="about" class="card p-4 mt-4 shadow-sm">
 
@@ -61,16 +60,13 @@
 
       <h6 class="mt-3"> Features</h6>
       <ul>
-        <li>Search for words in real-time using a dictionary API</li>
-        <li>View definitions, examples, and synonyms</li>
-        <li>Responsive and modern UI using Bootstrap</li>
-        <li>Animated interactions for better user experience</li>
+        <li>Learn new vocabulary</li>
+        <li>Understand word meaning in context</li>
+        <li>Pronunciation Support</li>
       </ul>
 
 
     </section>
-
-  </div>
 
   
   <footer class="bg-dark text-light mt-5 py-4">
