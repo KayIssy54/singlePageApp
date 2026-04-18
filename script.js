@@ -100,7 +100,7 @@ function toggleFavorite(word) {
   }
 
   localStorage.setItem("favorites", JSON.stringify(favorites));
-  fetchWord(word); // refresh UI
+  fetchWord(word); 
 }
 
 
